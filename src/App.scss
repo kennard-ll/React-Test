@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Merienda', cursive;
+}
+
+header{
+    width: 100%;
+    height: 369px;
+    background-image: url("../public/img/coffee-shop-1209863_1920.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .container{
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: 30px 0;
+
+        .menu{
+
+            & ul{
+                display: flex;
+                align-items: center;
+            }
+
+            & .img{
+                    background-image: url("../public/img/coffee-beans.png");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    display: flex;
+                    height: 35px;
+                    width: 35px;
+                    background-position: center;
+                    
+                }
+            & li{
+                    list-style: none;
+                    margin-top: 25px;
+                    padding: 0 40px 0 0;
+                }
+            & a{
+                    text-decoration: none;
+                    color: #fff;
+                    font-weight: 400;
+                    line-height: 17px;
+                }
+            
+
+            & h1{
+                color: #fff;
+                text-align: center;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 55px;
+                line-height: 58px;
+                margin-top: 115px;
+            }
+        }
+    }
+}
+
+
+main{
+    .main-container{
+        max-width: 1200px;
+        margin: 0 auto;
+        
+        .about{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 70px;
+
+            .img{
+                background-image: url("../public/img/girl-865304_1920.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 400px;
+                width: 300px;
+                filter: drop-shadow(5px 5px 30px rgba(0, 0, 0, 0.25));
+            }
+
+            .about-text{
+                text-align: center;
+                margin-top: 15px;
+
+                h2{
+                    font-weight: 400;
+                    font-size: 32px;
+                    line-height: 35px;
+                }
+                .br{
+                    display: flex;
+                    padding: 20px 0;
+                    display: flex;
+                    align-self: center;
+                    justify-content: center;
+                    .about-img{
+                        background-image: url("../public/img/Group.png");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        height: 34px;
+                        width: 35px;
+                    }
+                        .line-img{
+                            background-image: url("../public/img/Line.png");
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            width: 65px;
+                            height: 1px;
+                            margin: 15px 35px 0 35px;
+                        }
+
+                }
+
+                p{
+                    font-weight: 500;
+                    line-height: 22px;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+            }
+           
+        }
+        
+        .line{
+            background-image: url("../public/img/Line.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 280px;
+            height: 1px;
+            margin-top: 70px;
+            margin-bottom: 60px;
+            margin-left: 465px;
+        }
+
+        .search{
+            display:flex ;
+            justify-content: space-around;
+            margin-bottom: 60px;
+
+            .card-input{
+                display: flex;
+                
+                h4{
+                    margin-top: 5px;
+                }
+                input{
+                    width: 230px;
+                    height: 35px;
+                    background: #FFFFFF;
+                    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+                    border-radius: 4px;
+                    border: none;
+                    text-align: center;
+                    margin-left: 30px;
+
+                    &:focus{
+                        outline: none;
+                    }
+                }
+
+            }
+            .card-filter{
+                display: flex;
+
+                h4{
+                    margin-top: 5px;
+                    margin-right: 30px;
+                }
+                button{
+                    width: 80px;
+                    height: 35px;
+                    background: #FFFFFF;
+                    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+                    border-radius: 4px 0px 0px 4px;
+                    border: none;
+                    margin: 0 3px;
+                }
+
+            }
+        }
+
+        .cards{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 30% 30% 30%;
+            justify-content: center;
+            justify-items: center;
+            gap: 55px;
+
+            .card{
+                background: #FFFFFF;
+                border-radius: 8px;
+                width: 240px;
+                height: 280px;
+                filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.25));
+
+                .card-img{
+                    background-image:url("../public/img/71qBQnpQFYL.png");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 187px;
+                    height: 135px;
+                    margin: 30px 25px 0;
+                }
+                h3{
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 40px;
+                    text-align: center;
+                }
+                p{
+                    text-align: end;
+                    margin-right:25px ;
+                }
+                span{
+                    font-weight: 700;
+                    line-height: 37px;
+                }
+            }
+        }
+
+        footer{
+            margin-top: 60px;
+
+             ul{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+             .img{
+                    background-image: url("../public/img/coffee-beans2.png");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    display: flex;
+                    height: 35px;
+                    width: 35px;
+                    background-position: center;
+                    
+                }
+             li{
+                    list-style: none;
+                    margin-top: 25px;
+                    padding: 0 40px 0 0;
+                }
+             a{
+                    text-decoration: none;
+                    color: #000000;
+                    font-weight: 400;
+                    line-height: 17px;
+                }
+        }
+
+        .footer-menu{
+            display: flex;
+            margin: 40px 0 20px;
+            display: flex;
+            align-self: center;
+            justify-content: center;
+
+            .footer-beans{
+                background-image: url("../public/img/Group.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 34px;
+                width: 35px;
+            }
+            .footer-img{
+                background-image: url("../public/img/Line.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 65px;
+                height: 1px;
+                margin: 15px 35px 0 35px;
+            }
+        }
+    }
+}
